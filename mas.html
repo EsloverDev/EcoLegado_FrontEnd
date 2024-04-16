@@ -32,18 +32,18 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-lg-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="./mas.html" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle active" aria-current="page" href="./mas.html" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             M&aacutes
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#seccion-galeria">Aprende a reciclar</a></li>
-                            <li><a class="dropdown-item" href="#seccion-usuario">Preguntas frecuentes</a></li>
-                            <li><a class="dropdown-item" href="#seccion-recuperador">Quienes somos</a></li>
+                            <li><a class="dropdown-item" href="#seccion-galeria">Galer&iacutea</a></li>
+                            <li><a class="dropdown-item" href="#seccion-usuario">Usuarios proveedores</a></li>
+                            <li><a class="dropdown-item" href="#seccion-recuperador">Usuarios recuperadores</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./iniciaSesion.html">Inicia Sesi&oacuten</a>
+                        <a class="nav-link" href="./iniciaSesion.html">Inicia Sesi&oacuten</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./comencemos.html">Comencemos</a>
@@ -54,13 +54,13 @@
         </div>
     </nav>
     <main class="pt-5 bg-color">
-        <section id="seccion-galeria" class="min-vh-100">
+        <section id="seccion-galeria" class="pb-5">
             <div class="text-center">
                 <h1>Nuestros Servicios: Cuidando el Planeta, Cuidando tu Futuro</h1>
                 <p class="fs-5">Sum&eacutergete en Nuestra Gama de Soluciones Sostenibles</p>
             </div>
             <div class="container">
-                <div id="carouselExample" class="carousel slide">
+                <div id="carouselExample" class="carousel slide p-5">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img src="./img/carrusel3.png" class="d-block w-100" alt="Incentivos">
@@ -91,18 +91,61 @@
                     </button>
                 </div>
             </div>
+                    <!-- Modal -->
+            <div class="modal fade modal-dialog modal-dialog-scrollable" id="registro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="seccion-usuario" class="min-vh-100 bg-hero-image" style="--bg-image: url(../img/usuario.jpg)">
             <article class=" min-vh-100 bg-alpha-color d-flex align-items-center">
                 <div class="container">
                     <article class="col-12 col-lg-6 offset-lg-6">
-                        <a class="btn btn-lg btn-success text-white mb-5" href="./comencemos.html">
-                            <b>Reg&iacutestrate ya!</b>
-                        </a>
-                        <h2>Reg&iacutestrate como usuario proveedor de material reciclado</h2>
-                        <p class="my-5 fs-5">
-                            Como usuario <b>proveedor</b> de material reciclado contribuir&aacutes activamente al proceso de reciclaje. Participa en la separaci&oacuten y recolecci&oacuten de materiales reciclables en tu hogar u oficina, como papel, cart&oacuten, pl&aacutestico, vidrio, entre otros, con el objetivo de proporcionar estos materiales a los recuperadores a trav&eacutes de la plataforma <b>EcoLegado</b>.
+                        <h2>Provee material reciclado</h2>
+                        <p class="my-3 fs-5">
+                            Como usuario <b>proveedor</b> de material reciclado obtendr&aacutes incentivos por participar en la separaci&oacuten de materiales reciclables en tu hogar u oficina, como papel, cart&oacuten, pl&aacutestico, vidrio y metal, con el objetivo de proporcionar estos materiales a los recuperadores a trav&eacutes de la plataforma <b>EcoLegado</b>.
                         </p>
+                        <div class="row">
+                            <div class="col">
+                                <p>
+                                    <i class="bi bi-check-lg">Recibe recompensas por la entrega de materiales reciclables.</i>
+                                </p>
+                                <p>
+                                    <i class="bi bi-check-lg">Accede a capacitaci&oacuten sobre buenas pr&aacutecticas de reciclaje.</i>
+                                </p>
+                                <p>
+                                    <i class="bi bi-check-lg">Conoce el impacto positivo de tu participaci&oacuten en el reciclaje</i>
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    <i class="bi bi-check-lg">Programa citas para la recolecci&oacuten del material.</i>
+                                </p>
+                                <p>
+                                    <i class="bi bi-check-lg">Proporciona retroalimentaci&oacuten del servicio de los recuperadores.</i>
+                                </p>
+                                <p>
+                                    <i class="bi bi-check-lg">S&eacute parte de una comunidad comprometida con el planeta.
+                                    </i>
+                                </p>
+                            </div>
+                        </div>
+                        <a class="btn btn-lg btn-success text-white my-3" href="#" data-bs-toggle="modal" data-bs-target="#registro">
+                            <b>¡Reg&iacutestrate ya!</b>
+                        </a>
                     </article>
                 </div>
             </article>
@@ -110,11 +153,50 @@
         <section id="seccion-recuperador" class="min-vh-100 bg-hero-image" style="--bg-image: url(../img/recuperador.jpg)">
             <article class=" min-vh-100 bg-alpha-color d-flex align-items-center">
                 <div class="container">
-                    <article class="col-12 col-lg-6 offset-lg-6">
-                        <a class="btn btn-lg btn-success text-white mb-5" href="./comencemos.html">
-                            <b>Comencemos</b>
+                    <article class="col-12 col-lg-6">
+                        <h2>Recupera material reciclado</h2>
+                        <p class="my-3 fs-5">
+                            Como usuario <b>recuperador</b> de material reciclado en <b>EcoLegado</b>, podr&aacutes optimizar tus rutas de recolecci&oacuten y aumentar tu eficiencia conect&aacutendote dir&eacutectamente con los proveedores para coordinar la recolecci&oacuten de materiales reutilizables, como papel, cart&oacuten, pl&aacutestico, vidrio y metal.
+                        </p>
+                        <div class="row">
+                            <div class="col">
+                                <p>
+                                    <i class="bi bi-check-lg">
+                                    Incrementa tus ingresos.
+                                    </i>
+                                </p>
+                                <p>
+                                    <i class="bi bi-check-lg">
+                                        Optimiza tus rutas.
+                                    </i>
+                                </p>
+                                <p>
+                                    <i class="bi bi-check-lg">
+                                        Accede a la ubicaci&oacuten exacta.
+                                    </i>
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    <i class="bi bi-check-lg">
+                                        Recupera m&aacutes material.
+                                    </i>
+                                </p>
+                                <p>
+                                    <i class="bi bi-check-lg">
+                                        Minimiza el tiempo y los costos.
+                                    </i>
+                                </p>
+                                <p>
+                                    <i class="bi bi-check-lg">
+                                        Proporciona retroalimentaci&oacuten.
+                                    </i>
+                                </p>
+                            </div>
+                        </div>
+                        <a class="btn btn-lg btn-success text-white my-3" href="#" data-bs-toggle="modal" data-bs-target="#registro">
+                            <b>¡Comencemos!</b>
                         </a>
-                        <h2>Reg&iacutestrate como usuario recuperador de material reciclado</h2>
                     </article>
                 </div>
             </article>
